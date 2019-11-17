@@ -1,0 +1,189 @@
+create table admin
+(
+ ADMINID VARCHAR2(50) primary key,
+ PASSWORD VARCHAR2(100)
+);
+
+create table adminlogin 
+(
+ USEREMAIL VARCHAR2(40) primary key,
+ PASSWD    VARCHAR2(40),
+ USERTYPE  VARCHAR2(40)
+);
+create table ans 
+(
+ AID    NUMBER(5) primary key,
+ QID    NUMBER(5),
+ USERID   VARCHAR2(100),
+ ANSTEXT  VARCHAR2(300),
+ CDATE   VARCHAR2(40)
+);
+ create table attendence 
+ (
+ ATT      VARCHAR2(5),
+ ROLLNO     VARCHAR2(20),
+ TME        VARCHAR2(40) primary key,
+ SUBJECT     VARCHAR2(20)
+ );
+ create table CHANGEPASSWORD
+ (
+  OLDPASS   VARCHAR2(100),
+ NEWPASS     VARCHAR2(100),
+ CONPASS     VARCHAR2(100)
+ );
+ 
+ create table CNTWO
+ (
+ MST1     VARCHAR2(10),
+ MST2      VARCHAR2(10),
+ FINAL     VARCHAR2(10),
+ ROLLNO    VARCHAR2(20),
+ EMAIL    VARCHAR2(20)
+ );
+ 
+ create table conslogin
+ (
+  EMAIL    VARCHAR2(40) primary key,
+ PASSWORD   VARCHAR2(40)
+ );
+ 
+ create table consreg
+ (
+ NAME                                               VARCHAR2(40),
+ EMAIL                                     VARCHAR2(40) PRIMARY key,
+ PASSWD                                             VARCHAR2(10),
+ PHONENO                                            VARCHAR2(10),
+ CITY                                               VARCHAR2(20),
+ ADDRESS                                            VARCHAR2(200),
+ GENDER                                             VARCHAR2(10),
+ FNAME                                              VARCHAR2(40),
+ AADHARNO                                           VARCHAR2(16),
+ UDATE                                              VARCHAR2(20),
+ SUBJECT                                            VARCHAR2(20)
+ );
+ 
+ create table daa
+ (
+  MST1                                               VARCHAR2(10),
+ MST2                                               VARCHAR2(10),
+ FINAL                                              VARCHAR2(10),
+ ROLLNO                                             VARCHAR2(20),
+ EMAIL                                              VARCHAR2(20)
+ );
+ 
+ create table DBMSM
+ (
+  MST1                                               VARCHAR2(10),
+ MST2                                               VARCHAR2(10),
+ FINAL                                              VARCHAR2(10),
+ ROLLNO                                             VARCHAR2(10),
+ EMAIL                                              VARCHAR2(40)
+ );
+ 
+ create table ENQUIRY
+ (
+  ID                                                 VARCHAR2(20),
+ NAME                                               VARCHAR2(100),
+ GENDER                                             VARCHAR2(5),
+ ADDRESS                                            VARCHAR2(200),
+ EMAILADDRESS                                       VARCHAR2(20),
+ CONTACTNO                                          VARCHAR2(20),
+ MESSAGE                                            VARCHAR2(20),
+ ENQUIRYDT                                          VARCHAR2(20)
+ );
+ create table estreg
+ (
+  STID                                               NUMBER(5),
+ NAME                                               VARCHAR2(30),
+ EMAIL                                              VARCHAR2(30) primary key,
+ PASSWD                                             VARCHAR2(50),
+ PHONENO                                            VARCHAR2(20),
+ CITY                                               VARCHAR2(30),
+ ADDRESS                                            VARCHAR2(200),
+ GENDER                                             VARCHAR2(20,
+ FNAME                                              VARCHAR2(30),
+ UDATE                                              VARCHAR2(40),
+ ROLLNO                                             VARCHAR2(20)
+ );
+ create table FEEDBACK
+ (
+ ID                                                 NUMBER(5) primary key,
+ NAME                                               VARCHAR2(100),
+ CONTACTNO                                          VARCHAR2(15),
+ EMAIL                                              VARCHAR2(100),
+ FEEDBACK                                           VARCHAR2(500),
+ CDATE                                              VARCHAR2(20)
+ );
+
+create table javam
+(
+ MST1                                               VARCHAR2(10),
+ MST2                                               VARCHAR2(10),
+ FINAL                                              VARCHAR2(10),
+ ROLLNO                                             VARCHAR2(20),
+ EMAIL                                              VARCHAR2(20)
+); 
+
+create table login
+(
+ EMAIL                                              VARCHAR2(40) primary key,
+ PASSW                                              VARCHAR2(40),
+ UDATE                                              VARCHAR2(40),
+ USERTYPE                                           VARCHAR2(20)
+);
+
+create table news
+(
+ ID                                                NUMBER(5) primary key,
+ MSG                                                VARCHAR2(200),
+ CDATE                                              VARCHAR2(50)
+);
+create table  qus
+(
+ QID                                        NUMBER(5) primary key,
+ USERID                                             VARCHAR2(100),
+ QTEXT                                              VARCHAR2(300),
+ CDATE                                              VARCHAR2(40)
+);
+create table tocm
+(
+ MST1                                               VARCHAR2(10),
+ MST2                                               VARCHAR2(10),
+ FINAL                                              VARCHAR2(10),
+ ROLLNO                                             VARCHAR2(20),
+ EMAIL                                              VARCHAR2(20)
+);
+create table UPLOADDATA
+(
+ ID                                                 NUMBER(5),
+ FILENAME                                           VARCHAR2(100),
+ MSG                                                VARCHAR2(100),
+ CDATE                                              VARCHAR2(50)
+);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

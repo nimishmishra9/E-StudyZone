@@ -1,0 +1,135 @@
+What Is Funcation:-
+deifination of Funcation:-  Funcation is Collection of The statement that's performs a particular task.The function contains the set of programming statements enclosed by {}
+ 
+ Ex:-     main function
+About the Funcation:- 
+.we can divide a large program into the basic building blocks known as function. 
+.A function can be called multiple times to provide reusability and modularity to the C program.
+.In other words, we can say that the collection of functions creates a program.
+.The function is also known as procedure or subroutine in other programming languages.
+
+
+Advantage of functions in C:- 
+
+.By using functions, we can avoid rewriting same logic/code again and again in a program.
+.We can call C functions any number of times in a program and from any place in a program.
+.We can track a large C program easily when it is divided into multiple functions.
+.Reusability is the main achievement of C functions.
+.However, Function calling is always a overhead in a C program.
+
+
+Function Aspects:- 
+There are three aspects of a C function.
+
+1. Function declaration A function must be declared globally in a c program to tell the compiler about the function name, function parameters, and return type.
+
+2. Function call Function can be called from anywhere in the program. The parameter list must not differ in function calling and function declaration. We must pass the same number of functions as it is declared in the function declaration.
+
+3. Function definition It contains the actual statements which are to be executed. It is the most important aspect to which the control comes when the function is called. Here, we must notice that only one value can be returned from the function.
+
+
+There are two types of functions in C programming:
+
+Predefined Funcation(Library Functions):-
+
+Predefined Funcationare the functions which are declared in the C header files such as scanf(), printf(), gets(), puts(), ceil(), floor() etc.
+
+User-defined functions: -
+User-defined functions are the functions which are created by the C programmer, so that he/she can use it many times. It reduces the complexity of a big program and optimizes the code.
+
+Return Value:-
+A C function may or may not return a value from the function. If you don't have to return any value from the function, use void for the return type.
+Let's see a simple example of C function that doesn't return any value from the function.
+
+Ex:- 
+
+                                void hello()
+								{  
+                                 printf("hello c");  
+                                }  
+
+Different aspects of function calling :- 
+A function may or may not accept any argument. It may or may not return any value. Based on these facts, There are four different aspects of function calls.
+
+1. function without arguments and without return value
+2. function without arguments and with return value
+3. function with arguments and without return value
+4. function with arguments and with return value
+
+
+Guys Let's Different Different function Aspects With Example
+
+
+1. function without arguments and without return value
+Ex:- 
+        #include<stdio.h>  
+        void printName();  
+        void main ()  
+        {  
+         printf("Hello ");  
+         printName();  
+        }  
+        void printName()  
+        {  
+        printf("Javatpoint");  
+        }  
+
+
+2. function without arguments and with return value
+
+           #include<stdio.h>  
+           int sum();  
+           void main()  
+           {  
+           int result;   
+           printf("\nGoing to calculate the sum of two numbers:");  
+           result = sum();  
+           printf("%d",result);  
+           }  
+          int sum()  
+          {  
+           int a,b;   
+           printf("\nEnter two numbers");  
+           scanf("%d %d",&a,&b);  
+           return a+b;   
+           }  
+
+3. function with arguments and without return value
+
+            #include<stdio.h>  
+            void sum(int, int);  
+            void main()  
+            {  
+            int a,b,result;   
+            printf("\nGoing to calculate the sum of two numbers:");  
+            printf("\nEnter two numbers:");  
+            scanf("%d %d",&a,&b);  
+            sum(a,b);  
+            }  
+            void sum(int a, int b)  
+            {  
+            printf("\nThe sum is %d",a+b);      
+            }   
+
+
+4. function with arguments and with return value
+
+               #include<stdio.h>  
+               int sum(int, int);  
+               void main()  
+               {  
+               int a,b,result;   
+               printf("\nGoing to calculate the sum of two numbers:");  
+               printf("\nEnter two numbers:");  
+               scanf("%d %d",&a,&b);  
+               result = sum(a,b);  
+               printf("\nThe sum is : %d",result);  
+               }  
+               int sum(int a, int b)  
+               {  
+                  return a+b;  
+               }  
+
+Thank you So Much Guys 
+Regareds Er Nimish Mishra
+
